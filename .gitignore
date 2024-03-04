@@ -3,4 +3,5 @@ node_modules/
 
 todo.html
 
+# dotenv environment variable files
 .env
