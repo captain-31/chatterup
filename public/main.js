@@ -1,4 +1,4 @@
-const socket = io.connect('http://localhost:3000')
+const socket = io.connect('https://chatterupapp.netlify.app')
 
 // elements
 const userList = document.getElementById('users-list')
