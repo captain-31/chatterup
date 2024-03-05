@@ -2,14 +2,16 @@ import express from 'express'
 import { Server } from 'socket.io'
 import cors from 'cors'
 import http from 'http'
-import path from 'path'
+import { fileURLToPath } from 'url'
+import { dirname, join } from 'path'
 
 import { userModel } from './src/schema/user.schema.js'
 import { chatModel } from './src/schema/chat.schema.js'
 
 const app = express()
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(join(__dirname, 'public')));
 
 app.use(cors())
 
