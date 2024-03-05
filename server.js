@@ -7,6 +7,9 @@ import { userModel } from './src/schema/user.schema.js'
 import { chatModel } from './src/schema/chat.schema.js'
 
 const app = express()
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(cors())
 
 export const server = http.createServer(app)
