@@ -2,6 +2,7 @@ import express from 'express'
 import { Server } from 'socket.io'
 import cors from 'cors'
 import http from 'http'
+import path from 'path'
 
 import { userModel } from './src/schema/user.schema.js'
 import { chatModel } from './src/schema/chat.schema.js'
