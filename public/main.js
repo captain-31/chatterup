@@ -1,4 +1,4 @@
-const socket = io.connect('https://chatterupapp.netlify.app')
+const socket = io.connect('https://chatterup-lrjo.onrender.com')
 
 // elements
 const userList = document.getElementById('users-list')
